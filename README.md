@@ -1,6 +1,5 @@
 
 ## 悬浮 left不要设置
-    <div class="bot">我浮在最下方</div>
     .bot {
     width: 100%;
     max-width: 750px;
