@@ -56,5 +56,7 @@
 ## a标签点击音乐
       a{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;}
 ## 去除手机号
-      <meta content="telephone=no" name="format-detection">
+      <meta content="telephone=no" name="format-detection">
+## chrome跨域
+      --disable-web-security
     
