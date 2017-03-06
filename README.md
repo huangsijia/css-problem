@@ -61,5 +61,4 @@
       <meta content="telephone=no" name="format-detection">
       
 ## chrome跨域
-      --disable-web-security
-    
+      --disable-web-security
