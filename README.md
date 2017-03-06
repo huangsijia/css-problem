@@ -62,3 +62,4 @@
       
 ## chrome跨域
       --disable-web-security
+       --args --disable-web-security --user-data-dir
