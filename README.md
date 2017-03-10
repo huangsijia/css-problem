@@ -64,4 +64,6 @@
       --disable-web-security
        --args --disable-web-security --user-data-dir
 ## 居中
-      transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+## 渐变
+      border-width:1px;border-style:solid;border-image:linear-gradient(#99c0f1, #5377d7) 30 30;
