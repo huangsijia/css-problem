@@ -62,4 +62,6 @@
       
 ## chrome跨域
       --disable-web-security
-       --args --disable-web-security --user-data-dir
+       --args --disable-web-security --user-data-dir
+## 居中
+      transform:translate(-50%,-50%);
