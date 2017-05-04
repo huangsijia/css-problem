@@ -76,3 +76,7 @@
       <meta content="black" name="apple-mobile-web-app-status-bar-style"><!-- 将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式-->
       <meta content="telephone=no" name="format-detection"><!-- 忽略将页面中的数字识别为电话号码-->
       <meta content="email=no" name="format-detection"><!-- 忽略Android平台中对邮箱地址的识别-->
+      
+## meta
+      apple-mobile-web-app-capable删除默认的苹果工具栏和菜单栏。
+      apple-mobile-web-app-status-bar-style作用是控制状态栏显示样式
