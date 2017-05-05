@@ -80,3 +80,18 @@
 ## meta
       apple-mobile-web-app-capable删除默认的苹果工具栏和菜单栏。
       apple-mobile-web-app-status-bar-style作用是控制状态栏显示样式
+      
+## css计算大小
+      $uiWidth:375px;
+      @function pxToRem($px){
+        @return 10 * $px/$uiWidth/2 * 1px;
+      }
+      @mixin screen($res-min, $res-max) {
+        @media screen and (min-width: $res-min+px) and (max-width: $res-max+px) {
+          .recharge {
+            .page-part {
+              margin-top: pxToRem(20px) * ($res-min/10);
+                        }
+                    }
+        }
+        @include screen(320,568);
