@@ -100,4 +100,7 @@
       span{width:5rem;height:5rem;border:.4rem solid #bcb9b9;border-radius:50%;-webkit-border-radius:50%;display:block;position:absolute;left:50%;top: 50%;margin-left:-2.5rem;margin-top:-2.5rem;}
       span:before{content:'';width:.6rem;height:2rem;border-radius:1rem;-webkit-border-radius:1rem;background:#bcb9b9;display:block;position:absolute;top:50%;left:50%;z-index:0;margin-top:-1rem;margin-left:-.3rem;}
       span:after{content:'';width:2rem;height:.6rem;border-radius:1rem;-webkit-border-radius:1rem;background:#bcb9b9;display:block;position:absolute;top:50%;left:50%;z-index:1;margin-top:-.3rem;margin-left:-1rem;}
+      
+## input的number可以输入e
+ type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))"
 
