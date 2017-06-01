@@ -102,5 +102,8 @@
       span:after{content:'';width:2rem;height:.6rem;border-radius:1rem;-webkit-border-radius:1rem;background:#bcb9b9;display:block;position:absolute;top:50%;left:50%;z-index:1;margin-top:-.3rem;margin-left:-1rem;}
       
 ## input的number可以输入e
- type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))"
+      type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))"
+ 
+## 透明
+      transparent
 
