@@ -111,3 +111,20 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
+    
+## 灰色 
+    opacity: .4;
+    filter: alpha(opacity=40);
+    filter: url(data:image/svg+xml;utf8,#grayscale);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+## hover 彩色
+    opacity: 1;
+    filter: alpha(opacity=0);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    filter: gray(0);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);
+
