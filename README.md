@@ -106,4 +106,8 @@
  
 ## 透明
       transparent
-
+## 点点点
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
