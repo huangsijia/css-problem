@@ -128,3 +128,6 @@
     filter: gray(0);
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);
 
+## inpout记住密码
+      autocomplete="new-password"
+
