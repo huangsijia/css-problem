@@ -130,10 +130,4 @@
 
 ## inpout记住密码
       autocomplete="new-password"
-## vue的css
-      <style lang="sass-loader">
-          @import "../../assets/home";
-      </style>
-      <style lang="scss" scoped="" type="text/css">
-          @import "../../assets/skin";
-      </style>
+
