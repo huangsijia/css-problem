@@ -130,4 +130,6 @@
 
 ## inpout记住密码
       autocomplete="new-password"
-
+## 居中
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
