@@ -59,6 +59,8 @@
     
 ## a标签点击阴影
       a{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;}
+## 阴影
+box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6)
       
 ## 去除手机号
       <meta content="telephone=no" name="format-detection">
