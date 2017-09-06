@@ -137,23 +137,25 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
     transform: translate(0,-50%);
 
 ## 对号
-<div class="check"></div>
-.check{
-background: #e53344;
-display: inline-block;
-width: 10px;
-height: 2px;
-margin: 2.4rem 1.2rem 0 0;
-bline-height: 0;
-font-size: 0;
-vertical-align: middle;
--webkit-transform: rotate(45deg);
-}
-.check:after{
-    content: '/';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: #e53344;
-    -webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);
-}
+      <div class="check"></div>
+      .check{
+      background: #e53344;
+      display: inline-block;
+      width: 10px;
+      height: 2px;
+      margin: 2.4rem 1.2rem 0 0;
+      bline-height: 0;
+      font-size: 0;
+      vertical-align: middle;
+      -webkit-transform: rotate(45deg);
+      }
+      .check:after{
+          content: '/';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #e53344;
+          -webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);
+      }
+## input解决浏览器会自动填充密码的问题
+      autocomplete="new-password"
