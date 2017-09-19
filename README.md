@@ -72,6 +72,7 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       transform:translate(-50%,-50%);
 ## 渐变
       border-width:1px;border-style:solid;border-image:linear-gradient(#99c0f1, #5377d7) 30 30;
+      background-image:linear-gradient(to right,red,blue)
 ## meta
       <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"><!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放页面-->
       <meta content="yes" name="apple-mobile-web-app-capable"><!-- 当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari-->
