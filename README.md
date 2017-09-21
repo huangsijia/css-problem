@@ -160,3 +160,6 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       }
 ## input解决浏览器会自动填充密码的问题
       autocomplete="new-password"
+      
+## 微信二维码生成
+      open.weixin.qq.com/qr/code/?username=微信号
