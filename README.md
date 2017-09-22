@@ -165,3 +165,5 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       open.weixin.qq.com/qr/code/?username=微信号
 ## 强制跳转
       <meta http-equiv="Refresh" content="0; url=http://bxjr.com/topic/security/" />
+##  table自定义border
+      border-collapse: collapse;
