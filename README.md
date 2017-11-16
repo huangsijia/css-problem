@@ -167,3 +167,10 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       <meta http-equiv="Refresh" content="0; url=http://bxjr.com/topic/security/" />
 ##  table自定义border
       border-collapse: collapse;
+## border image
+    border: 10px solid transparent;
+    border-image: url(../images/border-img.png) 10 10 round;
+    -webkit-border-image: url(../images/border-img.png) 10 10 round;
+    border-bottom: 0;
+    border-bottom-image: 0;
+    -webkit-border-bottom-image: 0;
