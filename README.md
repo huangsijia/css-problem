@@ -174,3 +174,10 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
     border-bottom: 0;
     border-bottom-image: 0;
     -webkit-border-bottom-image: 0;
+
+## 翻转和平滑
+/*.product-con:hover .title-tag{-webkit-animation:flip 1s 1;animation:flip 1s 1;}*/
+/*@keyframes flip{from{transform:rotateX(0deg); -ms-transform:rotateX(0deg); -moz-transform:rotateX(0deg); -webkit-transform:rotateX(0deg); -o-transform:rotateX(0deg);} to{transform:rotateX(360deg); -ms-transform:rotateX(360deg); -moz-transform:rotateX(360deg); -webkit-transform:rotateX(360deg); -o-transform:rotateX(360deg);}}*/
+.product-con .title-tag{position: relative;}
+.product-con .title-tag:after{content:"";position: absolute; top: 0; left: -25px; width: 30px; height: 22px; -webkit-transform: skew(-25deg); -moz-transform: skew(-25deg); -o-transform: skew(-25deg); -ms-transform: skew(-25deg);background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));}
+.product-con:hover .title-tag:after{left:84px; -webkit-transition: 2s; -moz-transition: 2s; -ms-transition: 2s; -o-transition: 2s; transition: 2s;}
