@@ -181,3 +181,45 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
 .product-con .title-tag{position: relative;}
 .product-con .title-tag:after{content:"";position: absolute; top: 0; left: -25px; width: 30px; height: 22px; -webkit-transform: skew(-25deg); -moz-transform: skew(-25deg); -o-transform: skew(-25deg); -ms-transform: skew(-25deg);background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));}
 .product-con:hover .title-tag:after{left:84px; -webkit-transition: 2s; -moz-transition: 2s; -ms-transition: 2s; -o-transition: 2s; transition: 2s;}
+
+
+## iPhoneX适配
+            第一步：设置网页在可视窗口的布局方式
+            ios11新增 viweport-fit 属性，使得页面内容完全覆盖整个窗口：
+
+            <meta name="viewport" content="width=device-width, viewport-fit=cover">
+            第二步：页面主体内容限定在安全区域内
+            env() 和 constant()ios11新增特性
+
+            ● safe-area-inset-left：安全区域距离左边边界距离
+            ● safe-area-inset-right：安全区域距离右边边界距离
+            ● safe-area-inset-top：安全区域距离顶部边界距离
+            ● safe-area-inset-bottom：安全区域距离底部边界距离
+
+            这里我们只需要关注 safe-area-inset-bottom 这个变量，因为它对应的就是小黑条的高度（横竖屏时值不一样）。
+
+            body {
+                padding-bottom: constant(safe-area-inset-bottom);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+            第三步：fixed 元素的适配
+            ● 类型一：fixed 完全吸底元素（bottom = 0）
+
+            {
+                padding-bottom: constant(safe-area-inset-bottom);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+            ● 类型二：fixed 非完全吸底元素（bottom ≠ 0），比如 “返回顶部”、“侧边广告” 等
+
+            {
+                margin-bottom: constant(safe-area-inset-bottom);
+                margin-bottom: env(safe-area-inset-bottom);
+            }
+            第四步：如果我们只希望 iPhoneX 才需要新增适配样式，我们可以配合 @supports 来隔离兼容样式
+
+            @supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {
+                div {
+                    margin-bottom: constant(safe-area-inset-bottom);
+                    margin-bottom: env(safe-area-inset-bottom);
+                }
+            }
