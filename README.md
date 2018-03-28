@@ -224,3 +224,12 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
                     margin-bottom: env(safe-area-inset-bottom);
                 }
             }
+            
+## 鼠标定义图片
+      a {
+        Cursor: url("../images/a1.png") 4 12, auto;
+      }
+
+      a:active {
+        cursor: url("../images/a2.png") 4 12, auto;
+      }
