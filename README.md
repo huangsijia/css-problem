@@ -130,6 +130,7 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
     filter: grayscale(0);
     filter: gray(0);
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff,endColorstr=#E5ffffff)
 
 ## inpout记住密码
       autocomplete="new-password"
