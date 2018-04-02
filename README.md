@@ -233,3 +233,11 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       a:active {
         cursor: url("../images/a2.png") 4 12, auto;
       }
+      
+## 居中title
+      .title{width:70%;height:3rem;line-height: 3rem;margin:4rem auto 1rem;font-size:1.6rem;text-align: center;color:#d89b00;font-size: 30px;}
+        .title h3{width:50%;}
+        .title i{width:25%;margin-top: 1.4rem;height:1px;background:#e3baa4;position: relative;}
+        .title i:before{content:"";width:14px;height:14px;background:#e3baa4;display:block;position:absolute;top:0;}
+        .title i.before:before{right:0;transform:rotate(45deg) translate(0,-50%);-webkit-transform:rotate(45deg) translate(0,-50%);}
+        .title i.after:before{left:0;transform:rotate(45deg) translate(-50%,0);-webkit-transform:rotate(45deg) translate(-50%,0);}
