@@ -244,3 +244,6 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
         
 ## IE8 transform
       http://www.useragentman.com/IETransformsTranslator/
+      
+## css animate
+      https://daneden.github.io/animate.css/
