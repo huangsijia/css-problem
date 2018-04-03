@@ -241,3 +241,6 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
         .title i:before{content:"";width:14px;height:14px;background:#e3baa4;display:block;position:absolute;top:0;}
         .title i.before:before{right:0;transform:rotate(45deg) translate(0,-50%);-webkit-transform:rotate(45deg) translate(0,-50%);}
         .title i.after:before{left:0;transform:rotate(45deg) translate(-50%,0);-webkit-transform:rotate(45deg) translate(-50%,0);}
+        
+## IE8 transform
+      http://www.useragentman.com/IETransformsTranslator/
