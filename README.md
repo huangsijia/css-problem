@@ -247,3 +247,9 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       
 ## css animate
       https://daneden.github.io/animate.css/
+      
+      
+## table border
+      <table border="1">
+      table,table tr th, table tr td { border:1px solid #e3e3e3; }
+      table{border-collapse: collapse;}
