@@ -253,3 +253,70 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       <table border="1">
       table,table tr th, table tr td { border:1px solid #e3e3e3; }
       table{border-collapse: collapse;}
+      
+## 右边宽度固定，左边自适应
+      第一种
+      <style>
+      body{
+          display: flex;
+      }
+      .left{
+          background-color: rebeccapurple;
+          height: 200px;
+          flex: 1;
+      }
+      .right{
+          background-color: red;
+          height: 200px;
+          width: 100px;
+      }
+      </style>
+      <body>
+          <div class="left"></div>
+          <div class="right"></div>
+      </body>
+      第二种
+      <style>
+    div {
+        height: 200px;
+    }
+    .left {
+        float: right;
+        width: 200px;
+        background-color: rebeccapurple;
+    }
+    .right {
+        margin-right: 200px;
+        background-color: red;
+    }
+      </style>
+      <body>
+          <div class="left"></div>
+          <div class="right"></div>
+      </body>
+## 水平居中
+      第一种
+      #container{
+        position:relative;
+    }
+
+    #center{
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);//或者第二种修改margin一处 margin:-50px 0 0 -50px;
+        background: red;
+    }
+    第三种
+        position:absolute;
+        margin:auto;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    第四种 ie8不支持
+    display:flex;
+    justify-content:center;
+    align-items: center;
