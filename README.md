@@ -330,3 +330,6 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
           -moz-user-select: none;     /* Firefox all */
           -ms-user-select: none;      /* IE 10+ */
       }
+      
+## 自动跳转代码如下：
+      <meta http-equiv="Refresh" content="1; url=http://www.baidu.com"/>
