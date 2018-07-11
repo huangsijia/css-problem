@@ -333,3 +333,6 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       
 ## 自动跳转代码如下：
       <meta http-equiv="Refresh" content="1; url=http://www.baidu.com"/>
+      
+## IE透明
+      filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
