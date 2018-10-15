@@ -336,3 +336,36 @@ box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.2), 0 25px 30px -20px rgba(57, 114, 0, 0.6
       
 ## IE透明
       filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+
+## 实现瀑布流布局的函数
+        function waterfall() {
+            var items = $("div.item"); //获取到所有的类名为item的元素
+            var postop = []; //这个数组用来存放item定位的高度
+            var itemWidth = items.eq(0).width(); //宽度都是一样的,所以随便获取一个就行
+            var spaceWidth = $(".waterfall").width() - itemWidth * 2;
+
+            items.each(function (index, elem) {
+                var targetItemTop = $(elem).height(); //遍历所有item并获取高度
+
+                if (index < 2) {
+                    //如果是在第一行
+                    postop[index] = targetItemTop; //把高度直接加入数组中
+                    $(elem).css({
+                        "left": itemWidth * index + (index % 2 === 0 ? 0 : spaceWidth), //设置left
+                        "top": 0 //和top
+                    });
+                } else {
+                    //其他行
+                    var mintop = Math.min.apply(null, postop); //获取数组中最小的一个
+                    var minindex = $.inArray(mintop, postop); //获取到数组最小值对应的排序
+
+                    $(elem).css({
+                        "top": mintop + 20, //设置top为数组中最小值
+                        "left": itemWidth * minindex + (minindex % 2 === 0 ? 0 : spaceWidth) //设置left
+                    });
+                }
+                postop[minindex] += $(elem).height() + 20; //更新数组
+            });
+
+            $(".waterfall").css({height: Math.max.apply(null, postop)});
+        }
