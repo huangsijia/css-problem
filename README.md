@@ -44,6 +44,8 @@
 ## 渐变遮挡
     .list .w92:before{content:'';width:100%;height:20px;display:block;background-image:linear-gradient(rgba(16,102,201,1) 60%,rgba(16,102,201,0) 100%);background-image:-webkit-linear-gradient(rgba(16,102,201,1) 60%,rgba(16,102,201,0) 100%);position:relative;z-index:5}
     .list .w92:after{content:'';width:100%;height:20px; display:block;background-image:linear-gradient(rgba(16,102,201,0) 0,rgba(16,102,201,1) 50%); background-image:-webkit-linear-gradient(rgba(16,102,201,0) 0,rgba(16,102,201,1) 50%);position:absolute;bottom:0;z-index:5}
+    background-image: linear-gradient(to bottom, $red, $gradientRed);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from($red), to($gradientRed));
     
 ## 转盘排版
     .turn .dish ul{width:100%;height:90%;position:absolute;top:5.2%;left:0;}
