@@ -1,3 +1,13 @@
+##  移动端适配
+    1、flexible:
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <style>
+    html,body{font-size:12px;}
+    [data-dpr="2"] html,body{font-size:24px;}
+    [data-dpr="2"] html,body{font-size:36px;}
+    </style>
+
+
 ## ￥
       &yen;
 
