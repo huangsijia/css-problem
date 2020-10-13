@@ -6,7 +6,7 @@
     [data-dpr="2"] html,body{font-size:24px;}
     [data-dpr="2"] html,body{font-size:36px;}
     </style>
-
+    2、vw
 
 ## ￥
       &yen;
