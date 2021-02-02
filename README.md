@@ -1,3 +1,7 @@
+## table 属性设置相邻单元格的边框间的距离
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+
 ##  移动端适配
     1、flexible:
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
